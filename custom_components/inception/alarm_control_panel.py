@@ -60,6 +60,7 @@ class InceptionAlarm(InceptionEntity, AlarmControlPanelEntity):
     entity_description: InceptionAlarmDescription
     data: Area
 
+    _attr_icon = "mdi:security"
     _attr_code_arm_required: bool = False
     _attr_supported_features = (
         AlarmControlPanelEntityFeature.ARM_HOME
